@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Controlador
+comment1.params=
+comment1.target=Controlador()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Controlador\r\n
+comment10.params=min\ max
+comment10.target=java.lang.String\ mostrarEntrePrecio(double,\ double)
+comment11.params=dia\ mes\ a\u00F1o
+comment11.target=java.lang.String\ listarCaducados(int,\ int,\ int)
+comment2.params=
+comment2.target=Controlador\ getSingleton()
+comment3.params=datos
+comment3.target=void\ addProducto(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ listarProductos()
+comment5.params=codigo\ newStock
+comment5.target=boolean\ addStock(java.lang.String,\ int)
+comment6.params=codigo
+comment6.target=model.Producto\ getProductoByCodigo(java.lang.String)
+comment7.params=codigo
+comment7.target=boolean\ deleteProducto(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ listarProductos0Stock()
+comment9.params=
+comment9.target=java.lang.String\ listarRetirados()
+numComments=12

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ProductoPerecedero
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ProductoPerecedero\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=codigoProducto\ descripcion\ precio\ stock\ dateCaducidad
+comment1.target=ProductoPerecedero(java.lang.String,\ java.lang.String,\ double,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getDateCaducidad()
+comment3.params=dateCaducidad
+comment3.target=void\ setDateCaducidad(java.lang.String)
+numComments=4

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Producto
+comment1.params=codigoProducto\ descripcion\ precio\ stock
+comment1.target=Producto(java.lang.String,\ java.lang.String,\ double,\ int)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment11.params=
+comment11.target=Producto\ cargarDesdeCSVPlus()
+comment2.params=
+comment2.target=java.lang.String\ getCodigoProducto()
+comment3.params=codigoProducto
+comment3.target=void\ setCodigoProducto(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getDescripcion()
+comment5.params=descripcion
+comment5.target=void\ setDescripcion(java.lang.String)
+comment6.params=
+comment6.target=double\ getPrecio()
+comment7.params=precio
+comment7.target=void\ setPrecio(double)
+comment8.params=
+comment8.target=int\ getStock()
+comment9.params=newStock
+comment9.target=void\ changeStock(int)
+numComments=12
