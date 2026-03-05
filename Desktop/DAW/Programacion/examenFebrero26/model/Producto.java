@@ -2,7 +2,7 @@ package model;
 
 //Clase producto
 
-public class Producto {
+public class Producto implements Comparable<Producto> {
     private String codigoProducto;
     private String descripcion;
     private double precio;
@@ -73,6 +73,14 @@ public class Producto {
         
         return new Producto(codigoProducto, descripcion, precio, stock);
         
+    }
+    
+    public int compareTo(Producto p){
+        return this.getDescripcion().compareToIgnoreCase(p.getDescripcion());
+    }
+    
+    public int comparableToCodigo(Producto p){
+        return this.getDescripcion().compareToIgnoreCase(p.getCodigoProducto());
     }
     
     

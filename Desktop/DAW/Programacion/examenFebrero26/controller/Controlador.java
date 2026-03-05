@@ -2,6 +2,7 @@ package controller;
 import model.*;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Controlador
 {
@@ -69,7 +70,9 @@ public class Controlador
     public String listarProductos(){
         String resultado ="";
         int i = 0;
-    
+        Collections.sort(misProductos);
+        Collections.sort(listaDeProductosInicial);
+        Collections.sort(misProductosRetirados);
         if(misProductos.isEmpty() && listaDeProductosInicial.isEmpty() && misProductosRetirados.isEmpty()){
             return "No hay Productos registrados";
         }
@@ -78,7 +81,7 @@ public class Controlador
             if(i == 0){
                 resultado +=("Productos Añadidos:\n");
                 System.out.println("");
-            }
+                }
             resultado += p.toString() + "\n";
             i++;
         }
@@ -324,6 +327,247 @@ public class Controlador
         return resultado;
         
     }
+    
+    public String compararXCodigo(){
+        Collections.sort(misProductos, new CompareToXCodigo());
+        Collections.sort(listaDeProductosInicial, new CompareToXCodigo());
+        Collections.sort(misProductosRetirados, new CompareToXCodigo());
+        String resultado ="";
+        int i = 0;
+        if(misProductos.isEmpty() && listaDeProductosInicial.isEmpty() && misProductosRetirados.isEmpty()){
+            return "No hay Productos registrados";
+        }
+    
+        for(Producto p: misProductos){
+            if(i == 0){
+                resultado +=("Productos Añadidos:\n");
+                System.out.println("");
+                }
+            resultado += p.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto d: listaDeProductosInicial){
+            if(i == 0){
+                resultado +=("Productos Iniciales:\n");
+                System.out.println("");
+            }
+            resultado += d.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto r: misProductosRetirados){
+            if(i == 0){
+                resultado +=("Productos Retirados:\n");
+                System.out.println("");
+            }
+            resultado += r.toString() + "\n";
+            i++;
+        }
+    
+        return resultado;
+    }
+    
+    public String compararXPrecio(){
+        Collections.sort(misProductos, new CompareToXPrecio());
+        Collections.sort(listaDeProductosInicial, new CompareToXPrecio());
+        Collections.sort(misProductosRetirados, new CompareToXPrecio());
+        String resultado ="";
+        int i = 0;
+        if(misProductos.isEmpty() && listaDeProductosInicial.isEmpty() && misProductosRetirados.isEmpty()){
+            return "No hay Productos registrados";
+        }
+    
+        for(Producto p: misProductos){
+            if(i == 0){
+                resultado +=("Productos Añadidos:\n");
+                System.out.println("");
+                }
+            resultado += p.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto d: listaDeProductosInicial){
+            if(i == 0){
+                resultado +=("Productos Iniciales:\n");
+                System.out.println("");
+            }
+            resultado += d.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto r: misProductosRetirados){
+            if(i == 0){
+                resultado +=("Productos Retirados:\n");
+                System.out.println("");
+            }
+            resultado += r.toString() + "\n";
+            i++;
+        }
+    
+        return resultado;
+    }
+    
+    public String compararXStock(){
+        Collections.sort(misProductos, new CompareToXStock());
+        Collections.sort(listaDeProductosInicial, new CompareToXStock());
+        Collections.sort(misProductosRetirados, new CompareToXStock());
+        String resultado ="";
+        int i = 0;
+        if(misProductos.isEmpty() && listaDeProductosInicial.isEmpty() && misProductosRetirados.isEmpty()){
+            return "No hay Productos registrados";
+        }
+    
+        for(Producto p: misProductos){
+            if(i == 0){
+                resultado +=("Productos Añadidos:\n");
+                System.out.println("");
+                }
+            resultado += p.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto d: listaDeProductosInicial){
+            if(i == 0){
+                resultado +=("Productos Iniciales:\n");
+                System.out.println("");
+            }
+            resultado += d.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto r: misProductosRetirados){
+            if(i == 0){
+                resultado +=("Productos Retirados:\n");
+                System.out.println("");
+            }
+            resultado += r.toString() + "\n";
+            i++;
+        }
+    
+        return resultado;
+    }
+    
+    public String compararXCodigoDes(){
+        Collections.sort(misProductos, new CompareToXCodigoDes());
+        Collections.sort(listaDeProductosInicial, new CompareToXCodigoDes());
+        Collections.sort(misProductosRetirados, new CompareToXCodigoDes());
+        String resultado ="";
+        int i = 0;
+        if(misProductos.isEmpty() && listaDeProductosInicial.isEmpty() && misProductosRetirados.isEmpty()){
+            return "No hay Productos registrados";
+        }
+    
+        for(Producto p: misProductos){
+            if(i == 0){
+                resultado +=("Productos Añadidos:\n");
+                System.out.println("");
+                }
+            resultado += p.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto d: listaDeProductosInicial){
+            if(i == 0){
+                resultado +=("Productos Iniciales:\n");
+                System.out.println("");
+            }
+            resultado += d.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto r: misProductosRetirados){
+            if(i == 0){
+                resultado +=("Productos Retirados:\n");
+                System.out.println("");
+            }
+            resultado += r.toString() + "\n";
+            i++;
+        }
+    
+        return resultado;
+    }
+    
+    public String compararXPrecioDes(){
+        Collections.sort(misProductos, new CompareToXPrecioDes());
+        Collections.sort(listaDeProductosInicial, new CompareToXPrecioDes());
+        Collections.sort(misProductosRetirados, new CompareToXPrecioDes());
+        String resultado ="";
+        int i = 0;
+        if(misProductos.isEmpty() && listaDeProductosInicial.isEmpty() && misProductosRetirados.isEmpty()){
+            return "No hay Productos registrados";
+        }
+    
+        for(Producto p: misProductos){
+            if(i == 0){
+                resultado +=("Productos Añadidos:\n");
+                System.out.println("");
+                }
+            resultado += p.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto d: listaDeProductosInicial){
+            if(i == 0){
+                resultado +=("Productos Iniciales:\n");
+                System.out.println("");
+            }
+            resultado += d.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto r: misProductosRetirados){
+            if(i == 0){
+                resultado +=("Productos Retirados:\n");
+                System.out.println("");
+            }
+            resultado += r.toString() + "\n";
+            i++;
+        }
+    
+        return resultado;
+    }
+    
+    public String compararXStockDes(){
+        Collections.sort(misProductos, new CompareToXStockDes());
+        Collections.sort(listaDeProductosInicial, new CompareToXStockDes());
+        Collections.sort(misProductosRetirados, new CompareToXStockDes());
+        String resultado ="";
+        int i = 0;
+        if(misProductos.isEmpty() && listaDeProductosInicial.isEmpty() && misProductosRetirados.isEmpty()){
+            return "No hay Productos registrados";
+        }
+    
+        for(Producto p: misProductos){
+            if(i == 0){
+                resultado +=("Productos Añadidos:\n");
+                System.out.println("");
+                }
+            resultado += p.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto d: listaDeProductosInicial){
+            if(i == 0){
+                resultado +=("Productos Iniciales:\n");
+                System.out.println("");
+            }
+            resultado += d.toString() + "\n";
+            i++;
+        }
+        i = 0;
+        for(Producto r: misProductosRetirados){
+            if(i == 0){
+                resultado +=("Productos Retirados:\n");
+                System.out.println("");
+            }
+            resultado += r.toString() + "\n";
+            i++;
+        }
+    
+        return resultado;
+    }
+    
     
     
 }

@@ -95,6 +95,12 @@ public class Main
         System.out.println("- 6. Mostrar productos caducados                       -");
         System.out.println("- 7. Mostrar productos entre dos precios               -");
         System.out.println("- 8. Mostrar productos retirados                       -");
+        System.out.println("- 9. Listar Productos por Codigo Ascendente            -");
+        System.out.println("- 10. Listar Productos por precio Ascendente           -");
+        System.out.println("- 11. Listar Productos por Stock  Ascendente           -");
+        System.out.println("- 12. Listar Productos por Codigo Descendente          -");
+        System.out.println("- 13. Listar Productos por precio Descendente          -");
+        System.out.println("- 14. Listar Productos por Stock Descendente           -");
         System.out.println("-                                                      -");
         System.out.println("-                                                      -");
         System.out.println("--------------------------------------------------------");
@@ -119,7 +125,18 @@ public class Main
             break;
             case 8: listarRetirados(controlador);
             break;
-            
+            case 9: listarProductoXCodigo(controlador);
+            break;
+            case 10: listarProductoXPrecio(controlador);
+            break;
+            case 11: listarProductoXStock(controlador);
+            break;
+            case 12: listarProductoXCodigoDes(controlador);
+            break;
+            case 13: listarProductoXPrecioDes(controlador);
+            break;
+            case 14: listarProductoXStockDes(controlador);
+            break;
         }
     }
     
@@ -281,6 +298,30 @@ public class Main
             }
         }while(!dateTrue);
         return date + ";";
-    } 
+    }
+    
+    public static void listarProductoXCodigo(Controlador controlador){
+        System.out.println(controlador.compararXCodigo());
+    }
+    
+    public static void listarProductoXPrecio(Controlador controlador){
+        System.out.println(controlador.compararXPrecio());
+    }
+    
+    public static void listarProductoXStock(Controlador controlador){
+        System.out.println(controlador.compararXStock());
+    }
+    
+    public static void listarProductoXCodigoDes(Controlador controlador){
+        System.out.println(controlador.compararXCodigoDes());
+    }
+    
+    public static void listarProductoXPrecioDes(Controlador controlador){
+        System.out.println(controlador.compararXPrecioDes());
+    }
+    
+    public static void listarProductoXStockDes(Controlador controlador){
+        System.out.println(controlador.compararXStockDes());
+    }
     
 }

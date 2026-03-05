@@ -9,7 +9,7 @@ public class DataAccess
 {
     private static final String data = "Clase=Producto;codigoProducto=TECL5678X;descripcion=Teclado mecánico RGB con switches rojos;precio=89.99;stock=45\n" +
         "Clase=Producto;codigoProducto=RATN9012K;descripcion=Ratón inalámbrico ergonómico con 5 botones;precio=34.50;stock=67\n"+
-        "Clase=Producto;codigoProducto=AURC3456L;descripcion=Auriculaes inalámbricos con cancelación de ruido;precio=129.99;stock=23\n"+
+        "Clase=Producto;codigoProducto=AURC3456L;descripcion=Auriculares inalámbricos con cancelación de ruido;precio=129.99;stock=23\n"+
         "Clase=Producto;codigoProducto=WEBC7890P;descripcion=Webcam Full HD 1080p con micrófono integrado;precio=59.90;stock=32\n"+
         "Clase=Producto;codigoProducto=HUBB2345M;descripcion=Hub USB 3.0 de 4 puertos con alimentación;precio=24.75;stock=56\n"+
         "Clase=Producto;codigoProducto=DISK1234R;descripcion=Disco duro externo 1TB USB-C resistente al agua;precio=79.99;stock=18\n"+
